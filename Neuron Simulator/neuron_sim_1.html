@@ -31,10 +31,17 @@
 	<!-- <embed src="neuron_pic_0.svg" type="image/svg+xml" /> -->
 	
 	<svg>
+		<defs>
+	    <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+	      <stop offset="0%" style="stop-color:rgb(200,0,200);
+	      stop-opacity:0.3" />
+	      <stop offset="100%" style="stop-color:rgb(255,255,255);stop-opacity:0" />
+	    </radialGradient>
+	  </defs>
 
 	</svg>
 	
-	<input type="button" value="Start" onclick="moveInterval = setInterval('move()', 300)"></input>
+	<input type="button" value="Start" onclick="moveInterval = setInterval('move()', 33)"></input>
 	<input type="button" value="Stop" onclick="clearInterval(moveInterval)"></input>
 	
 	<h3>Instructions:</h3>
